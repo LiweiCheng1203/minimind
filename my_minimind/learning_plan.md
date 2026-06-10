@@ -6,6 +6,8 @@
 
 目标是从 0 写出一个能完成语言模型训练闭环的 Dense 版小模型。完成后应该能够用文本数据做预训练，并用最简单的生成逻辑输出文本。
 
+`model/model_minimind.py` 采用“贴近原项目结构的学习版”：类名、主要函数名、`forward` 参数风格尽量和原项目 `model/model_minimind.py` 保持一致，方便逐行对照学习；但第一轮只实现 Dense 主干和 Causal LM loss，不提前实现 MoE、KV cache、复杂采样等后续轮次内容。
+
 建议文件结构：
 
 ```text
